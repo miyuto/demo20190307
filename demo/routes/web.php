@@ -17,3 +17,4 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+Route::post('/home-test',['as'=>'post-cal','uses'=>'HomeController@cal']);
